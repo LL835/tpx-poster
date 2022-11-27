@@ -1,0 +1,141 @@
+:root {
+    /* The colours go in this order: black, md grey, wine, magenta, lght grey, pink, white. */
+    --black: #292627;
+    --md-grey: #878383;
+    --wine: #61395c;
+    --magenta: #b44c97;
+    --lght-grey: #b8b2b0;
+    --pink: #bd7eb4;
+    --white: #fff;
+
+    /* The pattern repeats itself every six columns */
+    --width1: 6%;
+    --width2: 12%;
+    --width3: 20%;
+    --width4: 30%;
+    --width5: 12%;
+    --width6: 20%;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* center the poster on the page */
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--white);
+    display: flex;
+    place-items: center;
+}
+/* the poster canvas */
+.sheet {
+    width: 1024px;
+    height: 710px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+/* styles the general text */
+.heading {
+    margin-bottom: 40px;
+}
+h2 {
+    font-size: 1.3rem;
+    letter-spacing: 0.05px;
+}
+h2:first-child{
+    margin-bottom: 5px;
+}
+h3 {
+    text-align: right;
+    margin-bottom: 10px;
+    font-size: 0.85rem;
+    letter-spacing: 0.05px;
+}
+/* create the pattern with columns that have gradient backgrounds  */
+.pattern {
+    width: 100%;
+    flex-grow: 1;
+    display: flex;
+}
+
+.column1, .column7, .column13 {
+    flex-basis: var(--width1);
+}
+.column2, .column8, .column14 {
+    flex-basis: var(--width2);
+}
+.column3, .column9, .column15 {
+    flex-basis: var(--width3);
+}
+.column4, .column10, .column16 {
+    flex-basis: var(--width4)
+}
+.column5, .column11, .column17 {
+    flex-basis: var(--width5);
+}
+.column6, .column12, .column18 {
+    flex-basis: var(--width6);
+}
+
+.column1 {
+    background-image: linear-gradient(to bottom, var(--black) 70%, var(--md-grey) 70%, var(--md-grey) 90%, var(--wine) 90%);
+}
+.column2 {
+    background-image: linear-gradient(to bottom, var(--magenta) 55%, var(--lght-grey) 55%, var(--lght-grey) 80%, var(--pink) 80%);
+}
+.column3 {
+    background-image: linear-gradient(to bottom, var(--white) 35%, var(--black) 35%, var(--black) 70%, var(--md-grey) 70%);  
+}
+.column4 {
+    background-image: linear-gradient(to bottom, var(--wine) 25%, var(--magenta) 25%, var(--magenta) 60%, var(--lght-grey) 60%);  
+}
+.column5 {
+    background-image: linear-gradient(to bottom, var(--pink) 15%, var(--white) 15%, var(--white) 45%, var(--black) 45%);  
+}
+.column6 {
+    background-image: linear-gradient(to bottom, var(--md-grey) 7.5%, var(--wine) 5%, var(--wine) 25%, var(--magenta) 25%);  
+}
+
+.column7 {
+    background-image: linear-gradient(to bottom, var(--lght-grey) 70%, var(--pink) 70%, var(--pink) 90%, var(--white) 90%);  
+}
+.column8 {
+    background-image: linear-gradient(to bottom, var(--black) 55%, var(--md-grey) 55%, var(--md-grey) 80%, var(--wine) 80%);  
+}
+.column9 {
+    background-image: linear-gradient(to bottom, var(--magenta) 35%, var(--lght-grey) 35%, var(--lght-grey) 70%, var(--pink) 70%);  
+}
+.column10 {
+    background-image: linear-gradient(to bottom, var(--white) 25%, var(--black) 25%, var(--black) 60%, var(--md-grey) 60%);  
+}
+.column11 {
+    background-image: linear-gradient(to bottom, var(--wine) 15%, var(--magenta) 15%, var(--magenta) 45%, var(--lght-grey) 45%);  
+}
+.column12 {
+    background-image: linear-gradient(to bottom, var(--pink) 7.5%, var(--white) 5%, var(--white) 25%, var(--black) 25%);  
+}
+
+.column13 {
+    background-image: linear-gradient(to bottom, var(--md-grey) 70%, var(--wine) 70%, var(--wine) 90%, var(--magenta) 90%);
+}
+.column14 {
+    background-image: linear-gradient(to bottom, var(--lght-grey) 55%, var(--pink) 55%, var(--pink) 80%, var(--white) 80%);
+}
+.column15{
+    background-image: linear-gradient(to bottom, var(--black) 35%, var(--md-grey) 35%, var(--md-grey) 70%, var(--wine) 70%);  
+}
+.column16 {
+    background-image: linear-gradient(to bottom, var(--magenta) 25%, var(--lght-grey) 25%, var(--lght-grey) 60%, var(--pink) 60%);  
+}
+.column17 {
+    background-image: linear-gradient(to bottom, var(--white) 15%, var(--black) 15%, var(--black) 45%, var(--md-grey) 45%);  
+}
+.column18 {
+    background-image: linear-gradient(to bottom, var(--wine) 7.5%, var(--magenta) 5%, var(--magenta) 25%, var(--lght-grey) 25%);  
+}
