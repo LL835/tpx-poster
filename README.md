@@ -9,4 +9,4 @@ The original poster is [reference-image.jpg](https://ll835.github.io/tpx-poster/
 To view files locally, clone the repo onto your machine by:
 
 - Opening the terminal and navigating to the desired directory.
-- Entering the following into the terminal: `git@github.com:LL835/tpx-poster.git`
+- Entering the following into the terminal: `git clone git@github.com:LL835/tpx-poster.git`
